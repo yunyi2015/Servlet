@@ -30,6 +30,7 @@ public class HelloWorld extends HttpServlet {
 	   out.println("<h3>" + message + "</h3>");
 	   out.println("<h4>" + message + "</h4>");
 	   out.println("<h5>" + message + "</h5>");
+	   out.println("<h6>" + message + "</h6>");
 	}
 	
 	public void destroy()
