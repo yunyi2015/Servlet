@@ -1,15 +1,24 @@
 package com;
 
 //导入必需的 java 库
-import java.io.*;
-import javax.servlet.*;
-import javax.servlet.http.*;
+import javax.servlet.ServletException;
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+import java.io.IOException;
+import java.io.PrintWriter;
 
 //扩展 HttpServlet 类
 public class HelloWorld extends HttpServlet {
 
 	private String message;
-	
+
+	public int HW(int a,int b){
+		int c;
+		c=a/b;
+		return c;
+	}
+
 	public void init() throws ServletException
 	{
 	   // 执行必需的初始化
@@ -32,9 +41,10 @@ public class HelloWorld extends HttpServlet {
 	   out.println("<h5>" + message + "</h5>");
 	   out.println("<h6>" + message + "</h6>");
 	}
-	
+
 	public void destroy()
 	{
 	   // 什么也不做
 	}
+
 }
