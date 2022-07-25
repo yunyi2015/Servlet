@@ -16,6 +16,7 @@ public class HelloWorld extends HttpServlet {
 	public int HW(int a,int b){
 		int c;
 		c=a/b;
+
 		return c;
 	}
 
