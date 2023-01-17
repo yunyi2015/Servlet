@@ -46,6 +46,7 @@ public class HelloWorld extends HttpServlet {
 	public void destroy()
 	{
 	   // 什么也不做
+		// 什么也不做
 	}
 
 }
