@@ -1,18 +1,18 @@
 package com;
 
-import org.junit.After;
-import org.junit.Before;
-import org.junit.Test;
-import static org.junit.Assert.*;
+import org.testng.annotations.*;
+
+import static org.testng.Assert.*;
+
 
 
 public class HelloWorldTest {
 
-    @Before
+    @BeforeTest
     public void setUp() throws Exception {
     }
 
-    @After
+    @AfterTest
     public void tearDown() throws Exception {
     }
 
